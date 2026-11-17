@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه شخصی | وب‌سایت من</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: #f4f6fb;
+            color: #222;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #111827, #1e40af);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #dbeafe;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: #38bdf8;
+            color: #111827;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            color: #1e40af;
+            margin-bottom: 20px;
+            border-right: 4px solid #38bdf8;
+            padding-right: 12px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            background: #e5e7eb;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress span {
+            display: block;
+            height: 100%;
+            background: #2563eb;
+            border-radius: 10px;
+        }
+
+        .item {
+            border-right: 2px solid #38bdf8;
+            padding-right: 20px;
+            margin-bottom: 25px;
+        }
+
+        .item h3 {
+            color: #111827;
+        }
+
+        .item small {
+            color: #2563eb;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            background: #e0f2fe;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+            .container {
+                width: 92%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>رزومه من</h2>
+    <nav>
+        <a href="#about">درباره من</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#experience">سوابق</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#contact">تماس</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="https://placehold.co/300x300/1e40af/ffffff?text=My+Photo"
+         alt="تصویر پروفایل" class="profile-img">
+
+    <h1>نام و نام خانوادگی شما</h1>
+    <p>طراح سایت | برنامه‌نویس | متخصص فناوری اطلاعات</p>
+
+    <a href="#contact" class="btn">ارتباط با من</a>
+</section>
+
+<div class="container">
+
+    <section class="section" id="about">
+        <h2>درباره من</h2>
+        <p>
+            سلام! من یک فرد علاقه‌مند به فناوری و برنامه‌نویسی هستم.
+            در زمینه طراحی وب، توسعه نرم‌افزار و تکنولوژی فعالیت می‌کنم.
+            هدف من ایجاد پروژه‌های خلاقانه و کاربردی است.
+        </p>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>مهارت‌های من</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <p>HTML - 90%</p>
+                <div class="progress">
+                    <span style="width:90%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>CSS - 85%</p>
+                <div class="progress">
+                    <span style="width:85%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>JavaScript - 75%</p>
+                <div class="progress">
+                    <span style="width:75%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Photoshop - 70%</p>
+                <div class="progress">
+                    <span style="width:70%"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="experience">
+        <h2>سوابق تحصیلی و کاری</h2>
+
+        <div class="item">
+            <h3>کارشناسی مهندسی کامپیوتر</h3>
+            <small>۱۴۰۰ تا ۱۴۰۴</small>
+            <p>دانشگاه محل تحصیل شما</p>
+        </div>
+
+        <div class="item">
+            <h3>طراح و توسعه‌دهنده وب</h3>
+            <small>۱۴۰۳ تا اکنون</small>
+            <p>طراحی و توسعه وب‌سایت‌های شخصی و تجاری</p>
+        </div>
+
+    </section>
+
+    <section class="section" id="projects">
+        <h2>نمونه پروژه‌ها</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>پروژه اول</h3>
+                <p>طراحی وب‌سایت شخصی و حرفه‌ای</p>
+            </div>
+
+            <div class="project">
+                <h3>پروژه دوم</h3>
+                <p>طراحی فروشگاه اینترنتی</p>
+            </div>
+
+            <div class="project">
+                <h3>پروژه سوم</h3>
+                <p>طراحی پنل مدیریت و داشبورد</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2>ارتباط با من</h2>
+
+        <p>📧 ایمیل:
+            <a href="mailto:example@gmail.com">
+                example@gmail.com
+            </a>
+        </p>
+
+        <p>📱 تلفن: 09120000000</p>
+
+        <p>📍 آدرس: شهر محل سکونت شما</p>
+
+        <p>🌐 وب‌سایت:
+            <a href="#">www.example.com</a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>تمامی حقوق محفوظ است © ۱۴۰۵</p>
+    <p>طراحی شده با ❤️</p>
+</footer>
+
+</body>
+</html>
